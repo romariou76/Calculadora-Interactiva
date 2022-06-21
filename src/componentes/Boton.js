@@ -1,4 +1,5 @@
 import react from 'react';
+import '../hojas-de-estilo/Boton.css';
 
 function Boton(props) {
 
@@ -7,7 +8,7 @@ function Boton(props) {
     };                                                             //trimEnd para ocultar espacios
     return (
         <div
-            className={`boton-contenedor ${esOperador(props.children) ? 'operador' : ''}`.trimEnd()}>
+            className={`boton-contenedor ${esOperador(props.children) ? 'operador' : ''}`.trimEnd()}>{/*Aqui definimos 2 clases , boton-contnedor y operador */}
             {props.children}
         </div>
     )
