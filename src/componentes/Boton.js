@@ -7,11 +7,11 @@ function Boton(props) {
     };                                                             //trimEnd para ocultar espacios
     return (                                                       //En la linea 11 definimos 2 clases , boton-contnedor y operador
                                                                    // En linea 13Este funcion anonima devuelve el resultado de llamar a la funcion manejarclic
-        <div
+        <button
             className={`boton-contenedor ${esOperador(props.children) ? 'operador' : ''}`.trimEnd()}
             onClick={() => props.manejarClic(props.children)}> 
             {props.children}
-        </div>
+        </button>
     )
 }
 export default Boton;
